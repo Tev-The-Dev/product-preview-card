@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub Solution Code](https://github.com/Tev-The-Dev/product-preview-card)
+- Live Site URL: [Live site URL](https://product-preview-card-8pj.pages.dev)
 
 ## My process
 
