@@ -1,0 +1,91 @@
+/*try calc() function to scale viewport units for scalability.
+font-size: calc(0.8rem + 1vw);
+Also, try clamp() function
+font-size: clamp(1rem, 0.8rem + 1vw);*/
+
+@import url('https://fonts.googleapis.com/css?family=Fraunces');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+:root{
+    /*Primary*/
+    --Dark_cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    
+    /*Secondary*/
+    --Very_dark_blue: hsl(212, 21%, 14%);
+    --Dark_grayish_blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+
+    /*Typography*/
+    --Font_size_paragraph: 14px;
+
+    --Font_weight_500: 500;
+    --Font_weight_700: 700;
+
+    --Font_FamilyM: 'Montserrat', san-serif;
+    --Font_FamilyF: 'Fraunces', san-serif;
+}
+@media (min-width: 375px){
+    body{
+        height: 100vw;
+        background-color: var(--Cream);
+    }
+    main{
+        background-color: var(--White);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+
+    }
+    img{
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .content{
+        padding: 1.8rem;
+    }
+    .item{
+        font-family: var(--Font_FamilyM);
+        font-size: var(--Font_size_paragraph);
+        color: var(--Dark_grayish_blue);
+        font-weight: var(--Font_weight_500);
+        letter-spacing: .5rem;
+    }
+    .title{
+        font-family: var(--Font_FamilyF);
+        font-weight: var(--Font_weight_700);
+    }
+    p{
+        color: var(--Dark_grayish_blue);
+        line-height: 1.5rem;
+        padding-right: 2.1rem;
+    }
+    .price{
+        color: var(--Dark_cyan);
+        font-family: var(--Font_FamilyF);
+        padding-right: 2rem;
+    }
+    .money{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .icon-button{
+        background-color: var(--Dark_cyan);
+        color: var(--White);
+        border: none;
+        padding: 1rem 5rem;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        font-weight: var(--Font_weight_700);
+    }
+    .icon{
+        margin-right: .5rem;
+    };
+}
+@media (max-width: 1440px){
+    
+}
